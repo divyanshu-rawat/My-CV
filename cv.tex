@@ -1,0 +1,306 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{smartdiagram}
+\usepackage{fontspec}
+% if you want to add fontawesome package
+% you need to compile the tex file with LuaLaTeX
+% References:
+%   http://texdoc.net/texmf-dist/doc/latex/fontawesome/fontawesome.pdf
+%   https://www.ctan.org/tex-archive/fonts/fontawesome?lang=en
+%\usepackage{fontawesome}
+\usepackage{metalogo}
+\usepackage{dtklogos}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,shadows}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,           % no lik border color
+    allbordercolors=white       % white border color for all
+}
+\smartdiagramset{
+    bubble center node font = \footnotesize,
+    bubble node font = \footnotesize,
+    % specifies the minimum size of the bubble center node
+    bubble center node size = 0.5cm,
+    %  specifies the minimum size of the bubbles
+    bubble node size = 0.5cm,
+    % specifies which is the distance among the bubble center node and the other bubbles
+    distance center/other bubbles = 0.3cm,
+    % sets the distance from the text to the border of the bubble center node
+    distance text center bubble = 0.5cm,
+    % set center bubble color
+    bubble center node color = pblue,
+    % define the list of colors usable in the diagram
+    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
+    % sets the opacity at which the bubbles are shown
+    bubble fill opacity = 0.6,
+    % sets the opacity at which the bubble text is shown
+    bubble text opacity = 0.5,
+}
+
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{}{Divyanshu Rawat}
+      {Software Developer}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+%   \includegraphics[scale=0.18]{img/snow_circle.png}
+\hspace
+\hspace
+\hspace
+\hspace
+\hspace
+\hspace
+\hspace
+  \section{Address}
+    LNMIIT University
+    Jaipur, Rajasthan
+    ~
+  \section{Tel \& Mail}
+    8003856439
+    7300434869
+     \href{mailto:divyanshu.r46956@gmail.com}{\textbf{divyanshu.r46956@}\\gmail.com}
+    
+    ~
+   
+    ~
+  \section{Web \& Git}
+    \href{https://github.com/divyanshu-rawat}{Github/MyGit}
+    \href{https://divyanshu0001.wordpress.com/}{Wordpress/MyBlog}
+    ~
+  % use  \hspace{} or \vspace{} to change bubble size, if needed
+  \section{Web Technology}
+    \smartdiagram[bubble diagram]{
+        \textbf{C/C++},
+        \textbf{Highcharts},
+        % \textbf{Java},
+        \textbf{Angular JS},
+        \textbf{PHP\vspace{3mm}},
+        \textbf{HTML/CSS},
+        \textbf{Bootstrap},
+        \textbf{JS/jQuery},
+        \textbf{AJAX}
+    }
+    ~
+  \section{Other Skills}
+    \smartdiagram[bubble diagram]{
+        \textbf{GitHub},
+        \textbf{Node.js},
+        \textbf{MongoDB},
+        \textbf{leaflet.js},
+        \textbf{\vspace{2mm}Heroku\vspace{2mm}},
+        \textbf{MySQL}
+    }
+    ~
+\end{aside}
+~
+\section{Experience}
+\begin{entrylist}
+ \entry
+    {10/16 - Now}
+    {Software Engineering Internship}
+    {Mentorred}
+    {}
+    \entry
+    {08/16 - Now}
+    {Internshala Student Partner}
+    {Internshala}
+    {}
+  \entry
+    {05/16 - 07/16}
+    {Software Development Internship}
+    {Blue Water Trade Winds Pvt. Ltd.}
+    {}
+  \entry
+    {07/16 - 08/16}
+    {Web Development Teaching Assistant}
+    {Camp K-12 }
+    {}
+    \entry
+    {06/10 - 09/10}
+    {Distance Learning Student }
+    {University of Michigan School of Public Health}
+    {}
+    
+\end{entrylist}
+\\
+\section{Education}
+\begin{entrylist}
+  \entry
+    {2009 - 2012}
+    {Bachelor's Degree in Electronic Communications Engineering}
+    {}
+    {LNM Institute of Information Technology is a public-private partnership    venture between the LNM foundation and the Government of Rajasthan and     operates as an autonomous non-profit organization.}
+
+\end{entrylist}
+
+\section{Projects}
+\begin{entrylist}
+\hspace{10 mm} 
+    \entry{}
+    {A Single Page Application}
+    {Javascript/Angular JS}
+    {Built on Leveraging almost all components of Angular JS}
+     \entry{}
+    {Front End UI/UX }
+    {Javascript}
+    {A Collection of my Front-End UI/UX Skills}
+     \entry{}
+    {Data Visualization Interactive Map}
+    {Javascript}
+    {Built on Leveraging Javascript Library Highcharts.js}
+    \entry{}
+    {Chat Application }
+    {PHP}
+    {A Chat Application built using Php and Mysql }
+    \entry{}
+    {Thumbs Rating Application}
+    {PHP}
+    {A Thumbs Rating Application built using Php and Mysql}
+    \entry{}
+    {Grocery Application }
+    {Javascript/Angular JS}
+    {Built on Leveraging Javascript Library Highcharts.js}
+    \entry{}
+    {A Full Stack Application}
+    {PHP}
+    {A Full Stack Application built using Php and Mysql}
+    \entry{}
+    {Retrieving,Processing and Data Visualization}
+    {Python}
+    {Interactive Data Visualization built using Python and Javascript }
+    
+\end{entrylist}
+\newpage
+
+\begin{aside}
+~
+~
+~
+  \section{OS Preference}
+    \textbf{GNU/Linux}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{Unix}\includegraphics[scale=0.40]{img/4stars.png}
+    % \textbf{MacOS}\includegraphics[scale=0.40]{img/2stars.png}
+    \textbf{Windows}\includegraphics[scale=0.40]{img/4stars.png}
+    ~
+%   \section{Places Lived}
+%     \includegraphics[scale=0.25]{img/italia.png}
+    ~
+  \section{Languages}
+    % \textbf{Italian}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{English}\includegraphics[scale=0.40]{img/3stars.png}
+    ~
+\end{aside}
+
+
+\section{Achievements}
+\begin{entrylist}
+\entry
+    {Aug, 2016}
+    {Programming Club}
+    {LNMIIT}
+    {Sub Coordinator}
+  \entry
+    {Oct, 2016}
+    {Sapient Nitro Experience (UI) Hiring Hackathon}
+    {Contest}
+    {I was one of  89 final Shortlisted Profiles  out of  1187 registrations, \\ 815 participants.}
+    \entry
+    {Nov, 2016}
+    {Capgemini Hiring Challenge Level 2 Qualified.}
+    {Contest}
+    {}
+     \entry
+    {Dec, 2016}
+    {Duck Duck Go, Mozilla}
+    {Open Source Contributer}
+    {}
+     \entry
+    {2015-2016}
+    {MOOC}
+    {}
+    {Completed around 32 Certified MOOC's offered by top\\ Universities 
+      and Industry Leaders of the World.}
+    
+\end{entrylist}
+
+\section{Certifications}
+\begin{entrylist}
+  \entry
+    {}
+    {Front-End JavaScript Frameworks: AngularJS}
+    {Coursera. E-learning}
+    {}
+    \entry
+    {}
+    {Using Python to Access Web Data}
+    {Coursera. E-learning}
+    {}
+    \entry
+    {}
+    {Interactivity with JavaScript}
+    {Coursera. E-learning}
+    {}
+    \entry
+    {}
+    {Front-End Web UI Frameworks and Tools}
+    {Coursera. E-learning}
+    {}
+    {}
+    \entry
+    {}
+    {Using Databases with Python}
+    {Coursera. E-learning}
+    {}
+    \entry
+    {}
+    {Introduction to jQuery}
+    {Edx. E-learning}
+    {}
+     \entry
+    {}
+    {Programming Foundations with Python}
+    {Udacity. E-learning}
+    {}
+     \entry
+    {}
+    {How to Use Git and GitHub}
+    {Udacity. E-learning}
+    {}
+     \entry
+    {}
+    {Object Oriented Javascript}
+    {Udacity. E-learning}
+    {}
+    
+\end{entrylist}
+
+% \section{Other Info}
+% For the Italian job market:\\
+% \emph{Si autorizza il trattamento delle informazioni contenute nel curriculum in conformità alle disposizioni previste dal d.lgs. 196/2003. Si dichiara altresì di essere consapevole che, in caso di dichiarazioni non veritiere, si è passibili di sanzioni penali ai sensi del DPR 445/00 oltre alla revoca dei benefici eventualmente percepiti.}
+% \\
+\begin{flushleft}
+\emph{Dec 8th, 2016}
+\end{flushleft}
+\begin{flushright}
+\emph{Divyanshu Rawat}
+\end{flushright}
+
+\end{document}
